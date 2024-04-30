@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Lato&family=Lora:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+@font-face {
+  font-family: 'Brolink';
+  src: url("/fonts/brolink.otf") format('truetype');
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
