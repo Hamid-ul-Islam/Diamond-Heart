@@ -28,7 +28,7 @@ export default function CheckoutForm({
     const email = formData.get("email") as string;
     const city = formData.get("city") as string;
     const address = formData.get("address") as string;
-    await axios.post("http://localhost:8080/order", {
+    await axios.post("https://dhserver.vercel.app/order", {
       name: receiver,
       phone,
       email,

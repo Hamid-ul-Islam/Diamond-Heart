@@ -1,9 +1,9 @@
 describe("testing the products page", () => {
   beforeEach(() => {
-    cy.intercept("GET", "http://localhost:8080/products/categories").as(
+    cy.intercept("GET", "https://dhserver.vercel.app/products/categories").as(
       "categories"
     );
-    cy.intercept("GET", "http://localhost:8080/products?limit=100").as(
+    cy.intercept("GET", "https://dhserver.vercel.app/products?limit=100").as(
       "products"
     );
     cy.visit("/products");

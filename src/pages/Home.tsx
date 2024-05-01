@@ -17,9 +17,9 @@ const Home: FC = () => {
 
   useEffect(() => {
     const fetchProducts = () => {
-      fetch("http://localhost:8080/products?limit=24")
+      fetch("https://dhserver.vercel.app/products?limit=24")
         .then((res) => res.json())
-        .then(( products ) => {
+        .then((products) => {
           const productList: Product[] = [];
           products.forEach((product: Product) => {
             productList.push({

@@ -1,9 +1,11 @@
 describe("testing the single product page", () => {
   beforeEach(() => {
-    cy.intercept("GET", "http://localhost:8080/products/47").as("product");
+    cy.intercept("GET", "https://dhserver.vercel.app/products/47").as(
+      "product"
+    );
     cy.intercept(
       "GET",
-      "http://localhost:8080/products/category/womens-shoes"
+      "https://dhserver.vercel.app/products/category/womens-shoes"
     ).as("similar");
     cy.visit("/product/47");
   });

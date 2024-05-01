@@ -27,7 +27,7 @@ const SingleProduct: FC = () => {
 
   useEffect(() => {
     const fetchProductDetails = () => {
-      fetch(`http://localhost:8080/products/${productID}`)
+      fetch(`https://dhserver.vercel.app/products/${productID}`)
         .then((res) => res.json())
         .then((data) => {
           const { thumbnail, images, category } = data;
@@ -42,7 +42,7 @@ const SingleProduct: FC = () => {
 
   useEffect(() => {
     const fetchPreferences = (cat: string) => {
-      fetch(`http://localhost:8080/products/category/${cat}`)
+      fetch(`https://dhserver.vercel.app/products/category/${cat}`)
         .then((res) => res.json())
         .then((data) => {
           const _products: Product[] = data;

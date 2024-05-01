@@ -1,4 +1,4 @@
-import { FC} from "react";
+import { FC } from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { BsSearch } from "react-icons/bs";
 import { useAppSelector, useAppDispatch } from "../redux/hooks";
@@ -32,7 +32,7 @@ const Navbar: FC = () => {
     navigate("/products/");
     localStorage.setItem("category", "all");
     if (text === "") {
-      fetch("http://localhost:8080/products?limit=100")
+      fetch("https://dhserver.vercel.app/products?limit=100")
         .then((res) => res.json())
         .then((products) => {
           dispatch(addProducts(products));

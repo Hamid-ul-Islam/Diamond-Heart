@@ -1,4 +1,3 @@
-
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { addProducts } from "../redux/features/productSlice";
@@ -16,7 +15,7 @@ export default function SearchBar() {
     navigate("/products/");
     localStorage.setItem("category", "all");
     if (text === "") {
-      fetch("http://localhost:8080/products?limit=100")
+      fetch("https://dhserver.vercel.app/products?limit=100")
         .then((res) => res.json())
         .then(({ products }) => {
           dispatch(addProducts(products));

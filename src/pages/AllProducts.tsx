@@ -25,14 +25,14 @@ const AllProducts: FC = () => {
       localStorage.setItem("category", "all");
     }
     const fetchProducts = () => {
-      fetch("http://localhost:8080/products?limit=100")
+      fetch("https://dhserver.vercel.app/products?limit=100")
         .then((res) => res.json())
         .then((products) => {
           dispatch(addProducts(products));
         });
     };
     const fetchCategories = () => {
-      fetch("http://localhost:8080/products/categories")
+      fetch("https://dhserver.vercel.app/products/categories")
         .then((res) => res.json())
         .then((data) => {
           dispatch(addCategories(data));
@@ -75,7 +75,9 @@ const AllProducts: FC = () => {
         })
       );
     } else {
-      setCurrentProducts([...currentProducts].sort((a, b) => a.price - b.price));
+      setCurrentProducts(
+        [...currentProducts].sort((a, b) => a.price - b.price)
+      );
     }
   };
 

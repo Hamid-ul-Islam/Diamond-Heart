@@ -1,6 +1,6 @@
 describe("testing the home page", () => {
   beforeEach(() => {
-    cy.intercept("GET", "http://localhost:8080/products?limit=24").as(
+    cy.intercept("GET", "https://dhserver.vercel.app/products?limit=24").as(
       "products"
     );
     cy.visit("/");
@@ -24,12 +24,13 @@ describe("testing the home page", () => {
   });
 
   it("products endpoint is working properly", () => {
-    cy.request("GET", "http://localhost:8080/products?limit=24&skip=24").should(
-      (response) => {
-        expect(response.body).to.have.property("skip", 24);
-        expect(response.body.products).to.have.length(24);
-      }
-    );
+    cy.request(
+      "GET",
+      "https://dhserver.vercel.app/products?limit=24&skip=24"
+    ).should((response) => {
+      expect(response.body).to.have.property("skip", 24);
+      expect(response.body.products).to.have.length(24);
+    });
   });
 
   it("products are fetched properly", () => {
