@@ -35,7 +35,7 @@ const Home: FC = () => {
             });
           });
           dispatch(updateFeaturedList(productList.slice(0, 8)));
-          dispatch(updateNewList(productList.slice(8, 16)));
+          dispatch(updateNewList(productList.slice(4, 8)));
         });
     };
     fetchProducts();

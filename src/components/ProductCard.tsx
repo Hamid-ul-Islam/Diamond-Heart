@@ -17,7 +17,7 @@ const ProductCard: FC<Product> = ({
   title,
   category,
   rating,
-  discountPercentage,
+  discountPercentage = 0,
 }) => {
   const dispatch = useAppDispatch();
   // const { requireAuth } = useAuth();
@@ -67,7 +67,7 @@ const ProductCard: FC<Product> = ({
         <span className="border border-orange-600 px-1 rounded text-orange-600 text-xs">Tk. {(price - result).toFixed(2)} Off</span>
       </div>
       <div className="flex mt-1 justify-between px-8 pb-4">
-        {discountPercentage && (
+        { (
           <PriceSection discountPercentage={discountPercentage} price={price} />
         )}
         <button

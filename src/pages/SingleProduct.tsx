@@ -135,10 +135,10 @@ const SingleProduct: FC = () => {
           <h2 className="text-2xl">{product?.title}</h2>
           {product?.rating && <RatingStar rating={product?.rating} />}
           <div className="mt-1">
-            {product?.discountPercentage && (
+            {(
               <PriceSection
-                discountPercentage={product?.discountPercentage}
-                price={product?.price}
+                discountPercentage={product?.discountPercentage || 0}
+                price={product?.price || 0}
               />
             )}
           </div>

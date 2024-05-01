@@ -1,4 +1,4 @@
-export const cities:string[] = [
+export const cities = [
   "Dhaka",
   "Faridpur",
   "Gazipur",
@@ -63,4 +63,4 @@ export const cities:string[] = [
   "Meherpur",
   "Narail",
   "Satkhira",
-];
+].sort();

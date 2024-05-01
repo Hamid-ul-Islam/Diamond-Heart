@@ -17,8 +17,8 @@ const data = [
   },
   {
     icon: <TbDiscount2 className="text-4xl" />,
-    title: "Member Discount",
-    desc: "On order over $99",
+    title: "Website discount",
+    desc: "On order over Tk. 200",
   },
   {
     icon: <MdSupportAgent className="text-4xl" />,
@@ -28,7 +28,7 @@ const data = [
 ];
 
 const Features: FC = () => (
-  <div className="px-4 container grid gap-2 sm:grid-cols-2 lg:grid-cols-4 mt-8 mx-auto">
+  <div className="px-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-4 mt-8 container mx-auto">
     {data.map((item) => (
       <FeatureCard
         key={item.title}
