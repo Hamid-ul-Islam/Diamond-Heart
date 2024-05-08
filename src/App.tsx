@@ -8,7 +8,7 @@ import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer";
 import Cart from "./components/Cart";
 import SingleProduct from "./pages/SingleProduct";
-import LoginModal from "./components/LoginModal";
+import LoginModal from "./components/AuthModal";
 import Wishlist from "./pages/Wishlist";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Profile from "./pages/Profile";

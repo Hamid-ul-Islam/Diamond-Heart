@@ -1,51 +1,12 @@
-import { FC, useEffect, useState } from "react";
-
-interface Address {
-  address: string;
-  city: string;
-  postalCode: string;
-  state: string;
-}
-
-interface Company {
-  address: Address;
-  department: string;
-  name: string;
-  title: string;
-}
-
-interface UserInfo {
-  id: number;
-  image: string;
-  username: string;
-  firstName: string;
-  lastName: string;
-  maidenName: string;
-  age: number;
-  gender: string;
-  email: string;
-  phone: string;
-  bloodGroup: string;
-  address: Address;
-  company: Company;
-  university: string;
-}
+import { FC, useEffect } from "react";
 
 const Profile: FC = () => {
-  const [info, setInfo] = useState<UserInfo>();
-
-  useEffect(() => {
-    fetch("https://dummyjson.com/users/1")
-      .then((res) => res.json())
-      .then((data) => {
-        setInfo(data);
-      });
-  }, []);
+  useEffect(() => {}, []);
 
   return (
     <div className="container mx-auto min-h-[83vh] w-full max-w-5xl">
-      <h1 className="text-4xl p-4 font-bold font-lora">Your Account</h1>
-      <div className="font-karla grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-1 p-4">
+      <h1 className="text-4xl p-4 font-bold font-lora">Cooking this page</h1>
+      {/* <div className="font-karla grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-1 p-4">
         <img src={info?.image} alt="pp" className="text-center" />
         <table>
           <tbody>
@@ -112,7 +73,7 @@ const Profile: FC = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

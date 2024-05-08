@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const CustomPopup: FC = () => {
   const dispatch = useAppDispatch();
   const [isVisible, setVisible] = useState(false);
-  const username = useAppSelector((state) => state.authReducer.username);
+  const mail = useAppSelector((state) => state.authReducer.email);
 
   const handlePopup = () => {
     setVisible((v) => !v);
@@ -31,9 +31,9 @@ const CustomPopup: FC = () => {
       <div
         className="inline-block cursor-pointer hover:opacity-85"
         onClick={handlePopup}
-        data-test="username-popup"
+        data-test="mail-popup"
       >
-        {username}
+        {mail}
       </div>
       {isVisible && (
         <div

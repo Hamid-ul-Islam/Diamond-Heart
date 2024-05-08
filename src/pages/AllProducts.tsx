@@ -87,8 +87,8 @@ const AllProducts: FC = () => {
         title="All Products | All Premium Curtains"
         description="All premium curtains."
         keywords="curtains, পর্দা, প্রিমিয়াম-পর্দা, All-Products"
-        image="https://res.cloudinary.com/dqlmqakyt/image/upload/v1714495545/decorHeaven/file_1714495541890.png"
-        url="https://decorheaven.vercel.app/"
+        image="/og.png"
+        url="https://decorheaven.vercel.app"
       />
       <div className="grid lg:grid-cols-5 gap-1">
         <div className="col-span-1 hidden lg:block pt-5">

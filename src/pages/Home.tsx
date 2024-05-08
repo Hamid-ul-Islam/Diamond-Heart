@@ -47,8 +47,8 @@ const Home: FC = () => {
         title="DH | Premium Curtains shop"
         description="All premium curtains."
         keywords="curtains, পর্দা, প্রিমিয়াম-পর্দা"
-        image="https://res.cloudinary.com/dqlmqakyt/image/upload/v1714495545/decorHeaven/file_1714495541890.png"
-        url="https://decorheaven.vercel.app/"
+        image="/og.png"
+        url="https://decorheaven.vercel.app"
       />
       <HeroSection />
       <Features />

@@ -106,12 +106,8 @@ const SingleProduct: FC = () => {
         title={product?.title || "Premium Curtains"}
         description={product?.description || ""}
         keywords="curtains, পর্দা, প্রিমিয়াম-পর্দা, All-Products"
-        image={
-          imgs
-            ? imgs[0]
-            : "https://res.cloudinary.com/dqlmqakyt/image/upload/v1714495545/decorHeaven/file_1714495541890.png"
-        }
-        url="https://decorheaven.vercel.app/"
+        image={imgs ? imgs[0] : "/og.png"}
+        url="https://decorheaven.vercel.app"
       />
       <div className="flex flex-col lg:flex-row  flex-wrap gap-5 px-4 font-karla">
         <div className="space-y-2 lg:w-6/12 flex flex-col justify-center items-center">
@@ -135,12 +131,12 @@ const SingleProduct: FC = () => {
           <h2 className="text-2xl">{product?.title}</h2>
           {product?.rating && <RatingStar rating={product?.rating} />}
           <div className="mt-1">
-            {(
+            {
               <PriceSection
                 discountPercentage={product?.discountPercentage || 0}
                 price={product?.price || 0}
               />
-            )}
+            }
           </div>
           <table className="mt-2">
             <tbody>

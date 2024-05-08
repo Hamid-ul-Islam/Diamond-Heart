@@ -20,7 +20,7 @@ const Navbar: FC = () => {
   const allProducts = useAppSelector(
     (state) => state.productReducer.allProducts
   );
-  const username = useAppSelector((state) => state.authReducer.username);
+  const email = useAppSelector((state) => state.authReducer.email);
   // const { requireAuth } = useAuth();
 
   const showCart = () => {
@@ -78,7 +78,7 @@ const Navbar: FC = () => {
           <div className="flex gap-4 md:gap-8 items-center">
             <div className="lg:block hidden">
               <div className="flex items-center gap-2">
-                {username !== "" && (
+                {email !== "" && (
                   <img
                     src="https://robohash.org/Terry.png?set=set4"
                     alt="avatar"
@@ -86,7 +86,7 @@ const Navbar: FC = () => {
                   />
                 )}
                 <button className="bg-zinc-800 text-white rounded px-3 py-1">
-                  {username !== "" ? (
+                  {email !== "" ? (
                     <CustomPopup />
                   ) : (
                     <span
