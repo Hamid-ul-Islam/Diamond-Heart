@@ -46,6 +46,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For any inquiries or feedback, feel free to contact [me](mailto:alim1496@gmail.com).
+For any inquiries or feedback, feel free to contact [me](mailto:hamid.coder.js@gmail.com).
 
 Happy coding! 🚀
