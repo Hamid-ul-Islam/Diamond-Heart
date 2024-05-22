@@ -1,4 +1,4 @@
-# Shopify - a simple eCommerce app
+# Decor- A Full stack eCommerce app
 
 Welcome to my E-commerce App! This project is a dummy e-commerce application built using React, Tailwind CSS, Vite, TypeScript, and Redux Toolkit. It aims to showcase various features commonly found in e-commerce platforms, including a homepage, product listing page, cart functionality, and user-authenticated pages like account and wishlist.
 
@@ -17,23 +17,6 @@ Welcome to my E-commerce App! This project is a dummy e-commerce application bui
 - **Vite:** A modern build tool that serves your code via native ES Module imports during development for faster performance.
 - **TypeScript:** A statically typed superset of JavaScript that enhances code quality and developer productivity.
 - **Redux Toolkit:** A simplified state management library for managing application state efficiently.
-
-## Getting Started
-
-1. Clone this repository to your local machine.
-2. Install dependencies using `npm install` or `yarn install`.
-3. Start the development server using `npm run dev` or `yarn dev`.
-4. Open your browser and navigate to `http://localhost:5173` to view the application.
-
-## Contributing
-
-Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature-name`).
-3. Make your changes and commit them (`git commit -am 'Add new feature'`).
-4. Push to the branch (`git push origin feature/your-feature-name`).
-5. Open a pull request.
 
 ## License
 
